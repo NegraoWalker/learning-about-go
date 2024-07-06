@@ -9,5 +9,5 @@ func main() {
 	fmt.Println("Operação aritmética com decimais: 1.567 - 5.567 = ", 1.567-5.567)
 	fmt.Println("Operação aritmética com decimais: 1.567 / 5.567 = ", 1.567/5.567)
 	fmt.Println("Operação aritmética com decimais: 1.567 * 5.567 = ", 1.567*5.567)
-
+	fmt.Println("Walker " + "Negrão")
 }
