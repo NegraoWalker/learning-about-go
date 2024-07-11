@@ -19,11 +19,20 @@
 * Package fmt significa format (formato);
 * Se declaramos uma variável dentro de uma função temos que usá-la - Linguagem reclama de erro caso não faça;
 * Em uma função podemos ter dois retornos;
-* Ponteiro é uma variável que armazena um endereço de memória;
-* A notação &variavel indica o endereço de memória apontado pelo ponteiro;
-* A notação *variavel aponta para o valor armazenado no endereço de memória que o ponteiro aponta;
+* **Ponteiro** é uma variável que armazena um endereço de memória;
+* A notação *&variavel* indica o endereço de memória apontado pelo ponteiro;
+* A notação **variavel* aponta para o valor armazenado no endereço de memória que o ponteiro aponta;
 * Melhor explicação sobre ponteiro: https://www.youtube.com/watch?v=Ip1VpLxNOvQ&ab_channel=Filhodanuvem
 * Variáveis declaradas no escopo global estão disponíveis para todas as funções. Já variáveis declaradas no escopo local estão disponíveis apenas dentro da função;
-* struct(estrutura) é um recurso que agrupa variáveis de tipos de dados diferentes. Cada variável dentro de uma struct é chamada de field(campo). Esse recurso é muito utilizado para agrupar dados relacionados;
+* **struct(estrutura)** é um recurso que agrupa variáveis de tipos de dados diferentes. Cada variável dentro de uma struct é chamada de field(campo). Esse recurso é muito utilizado para agrupar dados relacionados;
 * Se declararmos uma variável ou função com a primeira letra do seu nome em maiúscula, informamos ao compilador do Go que a mesma pode ser eventualmente usada em outro pacote. Já o contrário, a variável ou função só ficará disponível dentro do pacote que foi declarada;
-* receiver(receptor) é um parâmetro especial que permite que uma função seja associada a um tipo específico, transformando-a em um método. Receivers são usados para definir métodos em tipos de structs (ou outros tipos) e são declarados na definição da função antes do nome da função;
+* **receiver(receptor)** é um parâmetro especial que permite que uma função seja associada a um tipo específico, transformando-a em um método. Receivers são usados para definir métodos em tipos de structs (ou outros tipos) e são declarados na definição da função antes do nome da função;
+* **map(mapa)** é estrutura de dados que associa chaves a valores, permitindo a busca rápida de valores baseados em suas chaves.
+* **slice(fatia)** é uma estrutura de dados que fornece uma interface poderosa e flexível para sequências de elementos. Um slice é composto por três componentes principais:
+    
+    *Ponteiro (pointer)*: aponta para o primeiro elemento da array subjacente que é acessível pelo slice.
+
+    *Comprimento (length)*: o número de elementos no slice.
+
+    *Capacidade (capacity)*: o número de elementos entre o primeiro elemento do slice e o final da array subjacente.
+
