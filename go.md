@@ -27,12 +27,13 @@
 * **struct(estrutura)** é um recurso que agrupa variáveis de tipos de dados diferentes. Cada variável dentro de uma struct é chamada de field(campo). Esse recurso é muito utilizado para agrupar dados relacionados;
 * Se declararmos uma variável ou função com a primeira letra do seu nome em maiúscula, informamos ao compilador do Go que a mesma pode ser eventualmente usada em outro pacote. Já o contrário, a variável ou função só ficará disponível dentro do pacote que foi declarada;
 * **receiver(receptor)** é um parâmetro especial que permite que uma função seja associada a um tipo específico, transformando-a em um método. Receivers são usados para definir métodos em tipos de structs (ou outros tipos) e são declarados na definição da função antes do nome da função;
-* **map(mapa)** é estrutura de dados que associa chaves a valores, permitindo a busca rápida de valores baseados em suas chaves.
+* **map(mapa)** é estrutura de dados que associa chaves a valores, permitindo a busca rápida de valores baseados em suas chaves;
 * **slice(fatia)** é uma estrutura de dados que fornece uma interface poderosa e flexível para sequências de elementos. Um slice é composto por três componentes principais:
     
-    *Ponteiro (pointer)*: aponta para o primeiro elemento da array subjacente que é acessível pelo slice.
+    *Ponteiro (pointer)*: aponta para o primeiro elemento da array subjacente que é acessível pelo slice;
 
-    *Comprimento (length)*: o número de elementos no slice.
+    *Comprimento (length)*: o número de elementos no slice;
 
-    *Capacidade (capacity)*: o número de elementos entre o primeiro elemento do slice e o final da array subjacente.
+    *Capacidade (capacity)*: o número de elementos entre o primeiro elemento do slice e o final da array subjacente;
+* **strings** são imutáveis;
 
