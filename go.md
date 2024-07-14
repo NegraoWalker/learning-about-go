@@ -36,4 +36,8 @@
 
     *Capacidade (capacity)*: o número de elementos entre o primeiro elemento do slice e o final da array subjacente;
 * **strings** são imutáveis;
+* **interface** é um tipo que especifica um conjunto de métodos, mas não implementa esses métodos. Interfaces são usadas para definir comportamentos comuns que diferentes tipos podem implementar, promovendo a flexibilidade e a reutilização do código;
+* **package** é uma coleção de arquivos de código-fonte que são compilados juntos. Cada arquivo em um pacote começa com uma declaração de pacote, que indica o nome do pacote ao qual o arquivo pertence. Os pacotes permitem organizar o código em módulos reutilizáveis e gerenciáveis;
+* **module** é maneira de gerenciar dependências e pacotes em projetos de software. Os módulos permitem que os desenvolvedores especifiquem quais versões de pacotes (também conhecidos como dependências) seu código depende, o que facilita a reprodutibilidade e a gestão de versões. Para iniciar um módulo abrir o terminal dentro do diretório do projeto e digitar o seguinte comando: 
+*go mod init github.com/NegraoWalker/name-module*, com a execução desse programa será criado um arquivo go.mod, onde apresenta as dependências do projeto e suas versões;
 
