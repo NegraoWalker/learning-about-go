@@ -41,4 +41,9 @@
 * **module** é maneira de gerenciar dependências e pacotes em projetos de software. Os módulos permitem que os desenvolvedores especifiquem quais versões de pacotes (também conhecidos como dependências) seu código depende, o que facilita a reprodutibilidade e a gestão de versões. Para iniciar um módulo abrir o terminal dentro do diretório do projeto e digitar o seguinte comando: 
 *go mod init github.com/NegraoWalker/name-module*, com a execução desse programa será criado um arquivo go.mod, onde apresenta as dependências do projeto e suas versões;
 * **channels (canais)** Um channel é uma estrutura de dados que se comporta como uma fila, onde goroutines podem enviar e receber valores. Channels são tipados, o que significa que um channel declarado para um tipo específico só pode transportar valores desse tipo. Os channels (canais) em Go são uma característica fundamental da linguagem que permite a comunicação segura entre goroutines. Eles proporcionam um meio pelo qual goroutines podem sincronizar a execução e trocar dados;
+* Para conversão de dados no formato json para slice usar o pacote "encoding/json";
+* Para realizar testes temos que criar um module no diretório;
+* Para rodar os testes, usar o comando *go test -v*;
+* Para verificar a porcentagem de cobertura dos meus testes, usar comando  *go test -cover*;
+* Para verificar a parte do código que não está coberto pelos testes, usar o comando *go test -coverprofile=coverage.out && go tool cover -html=coverage.out*;
 
