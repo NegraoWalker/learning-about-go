@@ -12,12 +12,12 @@ const accountBalanceFile = "balance.txt"
 func getBalanceFromFile() (float64, error) {
 	data, err := os.ReadFile(accountBalanceFile)
 	if err != nil {
-		return 0.00, errors.New("Failed to read file.")
+		return 0.00, errors.New("failed to read file")
 	}
 	balanceText := string(data)
 	balance, err := strconv.ParseFloat(balanceText, 64)
 	if err != nil {
-		return 0.0, errors.New("Failed to parse stored balance value.")
+		return 0.0, errors.New("failed to parse stored balance value")
 	}
 	return balance, nil
 }
@@ -35,18 +35,13 @@ func main() {
 	if err != nil {
 		fmt.Println("ERROR")
 		fmt.Println(err)
-		// panic("Can't continue, sorry!!") //função para interromper o fluxo de execução caso ocorra algum erro
 		fmt.Println("-----------------------")
-		return //return interrompe o fluxo de execução
 	}
 
 	fmt.Println("Welcome to Go Bank!")
+
 	for someCondition {
-		fmt.Println("What do you want to do?")
-		fmt.Println("1. Check balance")
-		fmt.Println("2. Deposit money")
-		fmt.Println("3. Withdraw money")
-		fmt.Println("4. Exit")
+		presentOptions()
 
 		fmt.Print("Your choice: ")
 		fmt.Scan(&choice)
