@@ -5,6 +5,7 @@ import "fmt"
 func main() {
 	age := 32
 	// var agePointer *int //Declaração de um ponteiro
+	// agePointer = age
 	agePointer := &age //Passando o endereço de memória da variável age
 
 	fmt.Println("Valor armazenado na variável age: ", age)
