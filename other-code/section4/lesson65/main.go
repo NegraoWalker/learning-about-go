@@ -16,7 +16,7 @@ func main() {
 	fmt.Println("Valor armazenado na variável age, usando o operador * no ponteiro: ", *agePointer)
 }
 
-func getAdultYears(age *int) { //O parametro age da função é uma cópia do valor da variável age. Por ser uma cópia são endereços de memória diferentes
+func getAdultYears(age *int) {
 	// return *age - 10
 	*age = *age - 10
 } //age *int é a declaração de um ponteiro
