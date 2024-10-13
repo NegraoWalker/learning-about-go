@@ -26,6 +26,11 @@ type outputtable interface {
 // begin Main----------------------------------------------------------------------------
 func main() {
 
+	printSomething(1)
+	printSomething(2.89645)
+	printSomething("Text")
+	printSomething(false)
+
 	title, content := GetNoteData()
 	todoText := GetUserInput("Todo text: ")
 
@@ -58,6 +63,41 @@ func main() {
 }
 
 // end Main--------------------------------------------------------------------------------------------
+// Form 1:
+// func printSomething(value interface{}) { //a sintaxe interface{} permite que a função receba qualquer tipo de valor como parâmetro
+//
+//		switch value.(type) { //sintaxe switch value.(type) permite criar ações para cada tipo de dado
+//		case int:
+//			fmt.Println("Integer:", value)
+//		case float64:
+//			fmt.Println("Float:", value)
+//		case string:
+//			fmt.Println("String:", value)
+//		default:
+//			fmt.Println("Other:", value)
+//		}
+//	}
+//
+// Form 2:
+func printSomething(value interface{}) {
+	intVal, ok := value.(int)
+
+	if ok {
+		fmt.Println("Integer:", intVal)
+	}
+
+	floatVal, ok := value.(float64)
+
+	if ok {
+		fmt.Println("Float:", floatVal)
+	}
+
+	stringVal, ok := value.(string)
+
+	if ok {
+		fmt.Println("Integer:", stringVal)
+	}
+}
 
 func OutputData(data outputtable) error {
 	data.Display()
