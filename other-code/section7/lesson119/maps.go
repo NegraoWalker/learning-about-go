@@ -9,4 +9,11 @@ func main() {
 	}
 
 	fmt.Println(webSites)
+	fmt.Println(webSites["Google"]) //Passando a chave para ter acesso ao valor
+
+	webSites["LinkedIn"] = "https://linkedin.com"
+
+	delete(webSites, "Google")
+	fmt.Println(webSites)
+
 }
