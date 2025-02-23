@@ -1,0 +1,4 @@
+- Para criar o CRUD vamos utilizar outro pacote chamado gorilla/mux
+- Links para consulta: 
+    - https://github.com/gorilla/mux
+    - https://pkg.go.dev/github.com/gorilla/mux
