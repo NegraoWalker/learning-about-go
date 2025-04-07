@@ -1,1 +1,1 @@
-## Repositório criado para adicionar exemplos e exercícios sobre o aprendizado sobre a linguagem GO
+Repositório criado para o aprendizado da linguagem Go
