@@ -1,1 +1,1 @@
-Repositório criado para o aprendizado da linguagem Go
+REPOSITÓRIO CRIADO PARA O APRENDIZADO DA LINGUAGEM GO
